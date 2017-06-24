@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        
+		<title>OSM</title>
+
+		<link rel="stylesheet" href="./bower_components/reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="./bower_components/reveal.js/css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="./bower_components/reveal.js/lib/css/zenburn.css">
+
+        <style>
+        body, section , h1,h2,h3,h4 , li,ul,p {
+            font-family: "Pyidaungsu" !important;
+        }
+        </style>
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? './bower_components/reveal.js/css/print/pdf.css' : './bower_components/reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+        <style>
+            li {
+                line-height: 1.8em !important;
+            }
+        </style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+                    <script type="text/template">
+# Contribution on OpenStreetMap
+Saturgod (Htain Lin Shwe)
+                    </script>
+                </section>
+
+
+				<section data-markdown>
+                    <script type="text/template">
+## OpenStreetMap ဆိုတာဘာလဲ ?
+
+- Map Wikipedia
+- မည်သူမဆို ဝင်ပြီး ကူညီ ပါဝင် ရေးဆွဲနိုင်တယ်
+- [Steve Coast](https://en.wikipedia.org/wiki/Steve_Coast) က UK မှာ 2004 လောက်က Wikipedia ပုံစံ မှီငြမ်းပြီးတော့ ဖန်တီးခဲ့တယ်။
+- သုံးစွဲသူ ၂ သန်းကျော်
+- Company ပေါင်းမြောက်မြားစွာက OSM က data ကို ရယူအသုံးပြုထားတယ်။
+
+                    </script>
+                </section>
+
+
+                <section data-markdown>
+                    <script type="text/template">
+## ဘယ်သူတွေ အသုံးပြုနေလဲ ?
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+### [Apple](https://thenextweb.com/apple/2012/05/04/apple-finally-credits-openstreetmap-for-use-of-its-mapping-data-in-iphoto-app/)
+
+Use in Apple Map
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+### [Facebook](https://www.facebook.com)
+
+Use in Facebook check in , places , etc.
+
+
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+### [Mapbox](https://www.mapbox.com)
+
+Map SDK for developer
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+### [Waze](https://www.waze.com)
+
+Social Traffic App
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+### [Wikipedia](https://wikimediafoundation.org/wiki/Maps_Terms_of_Use)
+
+Showing data on [map](https://en.wikivoyage.org/wiki/Yangon)
+                    </script>
+                </section>
+
+
+                <section data-markdown>
+                    <script type="text/template">
+### [Mapillary](http://www.mapillary.com)
+
+Crowdsourced Street Photos
+
+                    </script>
+                </section>
+                
+                <section data-markdown>
+                    <script type="text/template">
+### [Cloudmade](http://cloudmade.com)
+
+Intelligent Vehicles Come To Life With CloudMade
+
+                    </script>
+                </section>
+                
+
+                <section data-markdown>
+                    <script type="text/template">
+### [MapWithMe](http://www.maps.me)
+
+Offline App for OSM
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+### [COMQUAS](https://play.google.com/store/apps/details?id=com.comquas.yangonmap)
+
+Using in Yangon Map Offline
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+## ဘာကြောင့် Google Map မသုံးလဲ
+
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+### ဘာကြောင့် Google Map မသုံးလဲ
+
+- Offline အသုံးပြု၍ မရခြင်း
+- Up to date မဖြစ်ခြင်း
+- မြေပုံ data များကို ပြန်လည် download ချယူခွင့်မရခြင်း
+
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+### ဘာကြောင့် Google Map မသုံးလဲ
+
+- ကိုယ်ပိုင် server ပေါ်တွင် မြေပုံ တည်ဆောက်ခွင့်မရခြင်း
+- Javascript API သည် ပြည့်ဝစွာ အခမဲ့ မဟုတ်ခြင်း (Google Maps JavaScript API, Free up to 25,000 map loads per day)
+
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+## OpenstreetMap
+
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+### OpenstreetMap
+
+- နေ့စဉ် User ပေါင်းများစွာ update လုပ်နေခြင်း
+- မှားနေသည့် လမ်းများ ၊ လမ်းကြောင်း ပြောင်းလဲ ထားသည့် လမ်းများကို ပြုပြင်နိုင်ခြင်း
+- OSM data ကို ပြန်လည် download လုပ်ယူနိုင်ခြင်း
+
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+### OpenstreetMap
+
+- မိမိကိုယ်ပိုင် server ဖြင့် မြေပုံ ပြုလုပ်နိုင်ခြင်း 
+- Open license ဖြစ်ခြင်း
+
+                    </script>
+                </section>
+                
+                <section data-markdown>
+                    <script type="text/template">
+## ဘယ်လို ပြင်ရမလဲ ?
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+- [OSM](http://www.openstreetmap.org) account တစ်ခု ဆောက်ပါ။
+- Login ဝင်ပါ။
+- ပြီးလျှင် Edit နှိပ်ပြီး ပြင်လို့ ရပါပြီ။
+                    </script>
+                </section>
+
+                 <section data-markdown>
+                    <script type="text/template">
+## Data များစွာလိုအပ်ဆဲ
+
+- လမ်းအမည်များစွာ မရှိသေး
+- မြို့များစွာ အတွက် Data များလိုအပ်ဆဲ
+- Zawgyi Vs Unicode 😫
+                    </script>
+                </section>
+
+                 <section data-markdown>
+                    <script type="text/template">
+## ဘာကြောင့် မျှဝေဖို့ လိုအပ်လဲ ?
+
+- OSM data ကို အသုံးပြုထားသော map များ data ပြည့်စုံရန် (Apple Map, Offline Map)
+- နိုင်ငံခြားသားများ သွားလာရာလွယ်ကူဖို့
+- ပြည်တွင်း ခရီးသွားများ သွားလာရန် လွယ်ကူဖို့
+
+                    </script>
+                </section>
+
+
+                <section data-markdown>
+                    <script type="text/template">
+# မေးခွန်း ?
+                    </script>
+                </section>
+
+
+			</div>
+		</div>
+
+		<script src="./bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="./bower_components/reveal.js/js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: './bower_components/reveal.js/plugin/markdown/marked.js' },
+					{ src: './bower_components/reveal.js/plugin/markdown/markdown.js' },
+					{ src: './bower_components/reveal.js/plugin/notes/notes.js', async: true },
+					{ src: './bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
